@@ -6,7 +6,7 @@
 ### cd scripts
 
 
-DOCLET_VERSION="1.0.0"
+DOCLET_VERSION="1.0.1"
 JAVA_VERSION="8"
 
 # Create temp directory & cd into it
@@ -20,7 +20,7 @@ cp /usr/lib/jvm/openjdk-$JAVA_VERSION/src.zip .
 unzip src.zip -d src
 
 # Download the JSON doclet
-wget https://github.com/InventivetalentDev/jsondoclet/releases/download/v$DOCLET_VERSION/json-doclet-$DOCLET_VERSION-SNAPSHOT-jar-with-dependencies.jar
+wget https://github.com/InventivetalentDev/jsondoclet/releases/download/$DOCLET_VERSION-SNAPSHOT/json-doclet-$DOCLET_VERSION-SNAPSHOT-jar-with-dependencies.jar
 
 # cd back out of the temp directory
 cd ..
