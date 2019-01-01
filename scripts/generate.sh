@@ -25,8 +25,10 @@ wget https://github.com/InventivetalentDev/jsondoclet/releases/download/v$DOCLET
 # cd back out of the temp directory
 cd ..
 
-# Run Doclet
+# Run Doclet in index mode
 javadoc -docletpath ./temp/json-doclet-$DOCLET_VERSION-SNAPSHOT-jar-with-dependencies.jar -doclet org.inventivetalent.jsondoclet.JsonDoclet -outfile ../jjdoc/jdk$JAVA_VERSION/ -sourcepath ./temp/src/ -public -subpackages java -exclude java.awt:java.applet:java.rmi:java.sql:java.beans
+# Run Doclet in single-file mode
+javadoc -docletpath ./temp/json-doclet-$DOCLET_VERSION-SNAPSHOT-jar-with-dependencies.jar -doclet org.inventivetalent.jsondoclet.JsonDoclet -outfile ../jjdoc/jdk-$JAVA_VERSION.json -sourcepath ./temp/src/ -public -subpackages java -exclude java.awt:java.applet:java.rmi:java.sql:java.beans
 
 
 ## Final cleanup
