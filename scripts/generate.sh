@@ -6,7 +6,7 @@
 ### cd scripts
 
 
-DOCLET_VERSION="1.0.2"
+DOCLET_VERSION="1.0.3"
 JAVA_VERSION="8"
 
 # Create temp directory & cd into it
